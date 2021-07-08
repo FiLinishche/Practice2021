@@ -22,7 +22,7 @@ function createTodo(){
     }
 
     li.onclick = function(){
-        li.style.background = 'green'
+        li.classList.toggle('done')
     }
 }
 
