@@ -8,7 +8,7 @@ $(function() {
     let localStorage = window.localStorage;
     let itemMap = [
         {
-            ind:0,
+            ind:1,
             text:'sample'
         }
     ]
@@ -19,6 +19,12 @@ $(function() {
     
     function createTodo(){
         let li = $("<li>");
+        li.animate(
+            {
+                'margin-right': '50',
+                'margin-left': '50'
+            }, {duration:1000, queue:false}
+        ).fadeIn(750);
         li.append(document.createTextNode(userInput.val()));
         ul.append(li);
         itemMap.push(
@@ -39,7 +45,14 @@ $(function() {
         deleteButton.click(deleteTododItem);
     
         function deleteTododItem(){
-            li.fadeOut();
+            li.toggleClass('done');
+            //li.fadeOut(1500);
+            li.animate(
+                {
+                    'margin-right': '-=100',
+                    'margin-left': '+=100'
+                }, {duration:1000, queue:false}
+            ).fadeOut(1500);
         }
     
         /*
