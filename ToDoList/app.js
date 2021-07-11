@@ -8,7 +8,7 @@ $(function() {
     let localStorage = window.localStorage;
     let itemMap = [
         {
-            ind:0,
+            ind:1,
             text:'sample'
         }
     ]
