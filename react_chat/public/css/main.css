@@ -1,9 +1,95 @@
 body, html {
+    background-color: #7790c5;
     height: 100%;
+}
+
+label{
+    font-size: 30px;
+    margin: 25px;
+    font-family: cursive;
+    color: #453061;
 }
 
 #container {
     width: 100%;
     margin: auto;
     height: 100%;
+}
+
+#connect-btn{
+    background-color: #544a81;
+    border-color: #453061;
+}
+
+.form-control{
+    margin: auto;
+    width: 50%;
+}
+
+.usernameWindow{
+    text-align: center;
+}
+
+.chat-header{
+    color: #453061;
+    font-family: cursive;
+    text-align: center;
+    margin: 25px;
+    font-size: 30px;
+}
+
+.form-control{
+    margin-top: 6px;
+}
+
+.row {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f9ff;
+    margin: auto;
+    width: 50%;
+    border-color: #4a4985;
+    border: 2px dashed;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.chat-message {
+    min-height: 22px;
+    padding-left: 16px;
+    margin: 6px;
+}
+
+.chat-user{
+    text-align: left;
+    float: right;
+    background-color: #b0d1f7;
+    border-color: #4a4985;
+    border: 2px dotted;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.chat-messages-empty{
+    padding: 20px;
+    color: #00000038;
+    font-size: 20px;
+}
+.chat-messages-time{
+    font-size: 12px;
+    color: rgba(102, 102, 102, 0.808);
+    float: left;
+}
+
+.chat-messages-author{
+    font: bold;
+    font-size: 12px;
+    color: rgb(107, 106, 106);
+    float: left;
+}
+
+.chat-messages-content{
+    font: bold;
+    font-size: 18px;
+    float: left;
 }
