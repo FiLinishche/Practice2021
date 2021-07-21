@@ -1,11 +1,12 @@
 body {
-	background: #39A9C7;
+	background: #8e9da7;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .intro {
-	margin: 30px 0px;
+	padding: 30px;
+	background-color: #404453;
 	font-weight: bold;
 }
 
@@ -19,19 +20,24 @@ p {
 	font-weight: 600;
 }
 
-#first {
+#tipTitle{
 	margin-top: 10px;
-	color: #025F70;
+	color: #404453;
+}
+
+#first {
+	
+	color: #404453;
 }
 
 #second {
-	color: #025F70;
+	color: #404453;
 
 }
 
 #third {
-	color: #025F70;
-	margin-bottom: 30px;
+	color: #404453;
+	margin-bottom: 18px;
 }
 
 
@@ -39,8 +45,22 @@ p {
 	border: none;
 	padding: 5px 15px;
 	border-radius: 5px;
-	color: #04A1BF;
-	background-color: #025F70;
+	color: #8e9da7;
+	background-color: #404453;
+	transition: all 0.75s ease;
+	-webkit-transition: all 0.75s ease;
+	-moz-transition: all 0.75s ease;
+	-ms-transition: all 0.75s ease;
+	-o-transition: all 0.75 ease;
+	font-weight: normal;
+}
+
+#deleteAll{
+	border: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: #8e9da7;
+	background-color: #404453;
 	transition: all 0.75s ease;
 	-webkit-transition: all 0.75s ease;
 	-moz-transition: all 0.75s ease;
@@ -50,7 +70,12 @@ p {
 }
 
 #enter:hover{
-	background-color: #02798F;
+	background-color: #535e69;
+	color: #FFCD5D;
+}
+
+#deleteAll:hover{
+	background-color: #535e69;
 	color: #FFCD5D;
 }
 
@@ -66,10 +91,10 @@ li {
 	color: #ffffff;
 	text-transform: capitalize;
 	font-weight: 600;
-	border: 2px solid #025f70;
+	border: 2px solid #404453;
 	border-radius: 5px;
 	margin-bottom: 10px;
-	background: #4EB9CD;
+	background: #848f9c;
 	transition: all 0.75s ease;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -78,7 +103,8 @@ li {
 }
 
 li:hover {
-	background: #76CFE0;
+	background: #a4adbe;
+	box-shadow: 0 0 5px 2px #4e5263;
 }
 
 li > button {
@@ -86,7 +112,7 @@ li > button {
 	background: none;
 	border: none;
 	float: right;
-	color: #025f70;
+	color: #404453;
 	font-weight: 800;
 }
 
@@ -105,4 +131,30 @@ input {
 
 .delete {
 	display: none;
+}
+
+#helpText{
+	margin: 10px auto;
+	width: 50%;
+	padding: 10px 10px 10px 10px;
+	border: 2px dashed #404453;
+	background-color: #a3b4bb;
+	border-radius: 5px;
+}
+
+#helpText > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	color: #404453;
+	font-weight: 800;
+}
+
+.bigList{
+	margin: 20px 50px;
+	padding: 20px 40px 20px 40px;
+	background-color: #acbcc2;
+	border: 3px solid #404453;
+	border-radius: 15px;
+	box-shadow: 0 0 5px 2px #4e5263;
 }

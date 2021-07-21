@@ -1,4 +1,17 @@
 $(function() {
+    let helpText = $('#helpText')
+    let closeButton = $('<button>');
+    closeButton.append(document.createTextNode('X'));
+    helpText.append(closeButton);
+    closeButton.click(function(){
+        closeTips();
+    })
+
+    let deleteAll = $('#deleteAll');
+    deleteAll.click(function(){
+        deleteAllMeth();
+    })
+
     let buttonEnter = $('#enter');
     buttonEnter.click(function(){
         createTodo();
@@ -15,6 +28,19 @@ $(function() {
     
     function inputLength(){
         return !!userInput.val();
+    }
+
+    function deleteAllMeth(){
+        ul.empty();
+    }
+
+    function closeTips(){
+        helpText.animate(
+            {
+                'margin-right': '-=100',
+                'margin-left': '+=100'
+            }, {duration:1000, queue:false}
+        ).fadeOut(1500);
     }
     
     function createTodo(){
